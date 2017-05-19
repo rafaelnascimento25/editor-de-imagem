@@ -1,0 +1,7 @@
+package ch.makery.editor.view;
+
+import ch.makery.editor.MainApp;
+
+public class FerramentasController {
+private MainApp mainApp;
+}
