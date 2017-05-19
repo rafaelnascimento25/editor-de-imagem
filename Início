@@ -1,0 +1,21 @@
+package ch.makery.editor.view;
+import ch.makery.editor.MainApp;
+import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+
+public class InicioController {
+private MainApp mainApp;
+
+public void setMainApp(MainApp mainApp) {
+    this.mainApp = mainApp;
+}
+
+@FXML
+private void handleShowFerramentas() {
+	
+	mainApp.showFerramentas();
+  }
+}
+
+	  
