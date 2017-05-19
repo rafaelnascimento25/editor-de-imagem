@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="375.0" prefWidth="833.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.editor.view.InicioController">
+   <children>
+      <GridPane layoutX="31.0" layoutY="6.0" prefHeight="293.0" prefWidth="853.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="501.0" minWidth="10.0" prefWidth="490.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="273.0" minWidth="10.0" prefWidth="124.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="250.0" minHeight="0.0" prefHeight="226.0" vgrow="SOMETIMES" />
+          <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="223.0" prefWidth="309.0">
+               <children>
+                  <Pane layoutX="-1.0" layoutY="2.0" prefHeight="232.0" prefWidth="495.0">
+                     <children>
+                        <Label fx:id="LabelMensagem" layoutX="144.0" layoutY="108.0" prefHeight="17.0" prefWidth="68.0" text="Label" />
+                     </children>
+                  </Pane>
+               </children></Pane>
+            <GridPane prefHeight="250.0" prefWidth="233.0" GridPane.columnIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="50.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="195.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="161.0" minHeight="10.0" prefHeight="107.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="141.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Login" />
+                  <Label text="Senha" GridPane.rowIndex="1" />
+                  <TextField fx:id="campoUsuario" prefHeight="25.0" prefWidth="160.0" GridPane.columnIndex="1" />
+                  <PasswordField fx:id="campoSenha" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" text="Login" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="184.0" layoutY="315.0" prefHeight="30.0" prefWidth="379.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="182.0" text="Visualizar Todas as Imagens" />
+            <Button mnemonicParsing="false" onAction="#handleShowFerramentas" prefHeight="25.0" prefWidth="183.0" text="Ir Para o Editor de Imagem" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
